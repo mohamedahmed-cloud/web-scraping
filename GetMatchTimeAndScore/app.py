@@ -13,7 +13,7 @@ teamB = getText(teamB)
 
 # get the list of teamA[i], teamB[i], score[i]
 rows = getRows(teamA, score, teamB)
-tableHead = ["الفريق الاول", "الفريق الثاني", "مي   عاد المبارة", "النتيجة"]
+tableHead = ["الفريق الاول", "الفريق الثاني", "ميعاد المبارة", "النتيجة"]
 
 # write in the file.
 with open('result.csv', 'w', newline = '',encoding = 'utf-8') as file:
