@@ -16,7 +16,7 @@ rows = getRows(teamA, score, teamB)
 tableHead = ["الفريق الاول", "الفريق الثاني", "مي   عاد المبارة", "النتيجة"]
 
 # write in the file.
-with open('save.csv', 'w', newline = '',encoding = 'utf-8') as file:
+with open('result.csv', 'w', newline = '',encoding = 'utf-8') as file:
     writer = csv.writer(file)
     writer.writerow(tableHead)
     writer.writerows(rows)
