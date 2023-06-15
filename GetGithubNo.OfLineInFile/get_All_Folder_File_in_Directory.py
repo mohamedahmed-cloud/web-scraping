@@ -32,7 +32,7 @@ def dfs(url):
     if not parentName:
         return
 
-    while parentUrl[-1] == 'Accessed':
+    while parentUrl[-1] == 'Accessed.':
         parentUrl.pop()
         parentName.pop()
         
