@@ -20,7 +20,8 @@ def data(allData):
             htmlContent += "<tr class = 'one'>"
         else:
             htmlContent += "<tr class = 'two'>"
-
+        cnt += 1
+        
         htmlContent += f"<td class = 'file'> {i[0]} </td>"
         htmlContent += f"<td class = 'line-number'>{i[1]}</td>"
         htmlContent += '</tr>'
