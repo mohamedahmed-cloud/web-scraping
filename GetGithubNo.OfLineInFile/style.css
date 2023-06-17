@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+table
+{
+    margin:auto;
+    margin-top:30px;
+    border:3px solid #2b3338;
+    border-spacing: 3px;
+    border-radius: 5px ;
+}
+
+.two td
+{
+    background-color: #757575;
+    padding: 10px 30px;
+
+}
+.one td
+{
+    padding: 10px 30px;
+    background: #f1f2f3;
+}

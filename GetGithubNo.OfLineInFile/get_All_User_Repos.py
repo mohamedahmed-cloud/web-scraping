@@ -26,7 +26,7 @@ for i in userName:
 
         time.sleep(1)
     else:
-        print("There is a response Error in the code.")
+        print(f"{response.status_code}")
         
 for i in all_user_repos:
     count = 1

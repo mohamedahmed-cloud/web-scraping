@@ -1,0 +1,12 @@
+
+[['README.md', 3], ['learn/argc&argv/a.out', "File didn't Open"], 
+['learn/argc&argv/one.c', 7], ['learn/Static/a.out', "File didn't Open"],
+['learn/Static/add.c', 10], ['learn/Static/add.o', "File didn't Open"], 
+['learn/Static/libname.a', "File didn't Open"], ['learn/Static/main', "File didn't Open"], 
+['learn/Static/main.c', 9],['learn/Static/main.h', 5], ['learn/Static/mul.c', 10],
+['learn/Static/mul.o', "File didn't Open"], ['learn/Malloc/a.out', "File didn't Open"], 
+['learn/Malloc/one.c', 35], ['learn/Dynamic/add.c', 10], 
+['learn/Dynamic/add.o', "File didn't Open"], ['learn/Dynamic/example', "File didn't Open"],
+['learn/Dynamic/liball.so', "File didn't Open"], ['learn/Dynamic/main.c', 9], 
+['learn/Dynamic/main.h', 5], ['learn/Dynamic/mul.c', 10], ['learn/Dynamic/mul.o', "File didn't Open"],
+['0x12-singly_linked_lists/0-print_list.c', 24], ['0x12-singly_linked_lists/1-list_len.c', 19]] 
