@@ -6,7 +6,9 @@ from FilterUser import filterUser
 
 arr = getValue(filterUser())
 print(arr)
-
+with open("marawany.txt", "w") as file:
+    file.write(str(arr))
+ 
 flag = 0
 
 if arr == "Error 403":

@@ -5,5 +5,4 @@ def render():
     firstPart = "/".join(firstPart[:-1])
     fileName = f"{firstPart}/index.html"
 
-    print(fileName)
     web.open(fileName)

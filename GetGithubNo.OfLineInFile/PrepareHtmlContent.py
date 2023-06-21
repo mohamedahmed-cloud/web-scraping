@@ -17,7 +17,6 @@ def data(allData):
     global htmlContent
     for arr in allData:
         for userName, content in arr.items():
-            print(userName,content)
             cnt = 1
             htmlContent += "<div class= 'container'>"
             htmlContent += f"<details> <summary>{userName} </summary>"
@@ -36,7 +35,7 @@ def data(allData):
                     htmlContent += "<tr class = 'two'>"
                 cnt += 1
                 
-                htmlContent += f"<td class = 'file'> {i[0]} </td>\n"
+                htmlContent += f"<td class = 'file'> {i[0].replace('%20', ' ')} </td>\n"
                 htmlContent += f"<td class = 'line-number'>{i[1]}</td>\n"
                 htmlContent += '</tr>\n'
         
