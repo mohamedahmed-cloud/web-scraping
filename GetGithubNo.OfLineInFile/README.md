@@ -1,9 +1,8 @@
 ## Project Overview:
-- This project is made to grab all file from any Repos
-- Get the number of lines in each file.
+This project aims to retrieve all files from any repository and count the number of lines in each file.
 
-## Idea Fro Creating This project
-- This project will help us in `IEEE` to automatically check for student task
+## Idea Behind Creating This Project:
+This project was created to assist IEEE in automatically checking student tasks.
 
-## Licence
-- MIT
+## License:
+- MIT license.

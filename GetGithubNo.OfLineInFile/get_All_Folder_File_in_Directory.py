@@ -1,12 +1,12 @@
-import requests
+import requests, time
 import get_Access_Token
 from get_File_Path import extract_file_path
-from SharableData import repo, userName
+from SharableData import repoName
 
 
-github_link = f"https://api.github.com/repos/{userName}/{repo}/contents"
-print(github_link)
+# print(github_link)
 # https://api.github.com/repos/mohamedahmed-cloud/Parking-system/contents
+
 accessToken = get_Access_Token.getAcessToken()
 header = {"Authorization": accessToken}
 
@@ -18,7 +18,7 @@ file = []
 cnt = 0
 path = ""
 # Logic
-def dfs(url):
+def dfs(url, userName):
     global path
     cnt1 = 0
 
@@ -30,7 +30,7 @@ def dfs(url):
             parentUrl.append(data['url'])
             result.append(data['name'])
         else:
-            file.append(extract_file_path(data['url']))
+            file.append(extract_file_path(data['url'], userName))
 
     if parentName and not cnt1:
             parentName.pop()
@@ -47,23 +47,29 @@ def dfs(url):
     url = requests.get(parentUrl[-1], headers = header)
     url = url.json()
     parentUrl[-1] = "Accessed."
-    dfs(url)
-
-    
-    
+    dfs(url, userName)
 
 
-    
-response = requests.get(github_link, headers = header)
-def getValue():
-    if response.status_code == 200:
-        data = response.json()
-        dfs(data)
-        return file
+def getValue(user):
+    allFile = []
+    print(user)
+    for userName in user:
+        github_link = f"https://api.github.com/repos/{userName}/{repoName}/contents"
+        print(github_link)
+        response = requests.get(github_link, headers = header)
+        if response.status_code == 200:
+            data = response.json()
+            # print(data)
+            dfs(data, userName)
+            print(file)
+            allFile.append({userName:file})
 
-    else:
-        # print(f"Erro {response.status_code}")
-        return (f"Error {response.status_code}")
+        else:
+            return (f"Error {response.status_code}")
+        time.sleep(3)
+
+    print(allFile)
+    return allFile
 
 
 

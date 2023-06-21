@@ -1,2 +1,2 @@
-userName = "mohamedahmed-cloud"
-repo = "alx-low_level_programming"
+repoName = "IEEE-ZSB-Technica1-Rookies-23"
+

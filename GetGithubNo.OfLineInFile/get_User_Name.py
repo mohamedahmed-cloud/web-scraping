@@ -1,18 +1,8 @@
-
-userAccount = []
 userName = []
 const = "https://github.com/"
 
-with open("data.txt", 'r') as f:
-    data = f.read()
-    userAccount.append(data)
-
-userAccount = userAccount[0].split("\n")
-
-if not userAccount[-1]:
-    userAccount = userAccount[:-1]
-
-def finalResult():
+def finalResult(userAccount):
+    global const
     for i in userAccount:
         user = ""
         for j in i[len(const):]:
@@ -20,7 +10,7 @@ def finalResult():
                 user += j
             else:break
         userName.append(user)
-    print(userName)
+
     return userName
 
-# finalResult()
+# print(finalResult(["https://github.com/mohamedahmed-cloud","https://github.com/abdabdii"]))

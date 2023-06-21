@@ -1,11 +1,11 @@
 import requests
-from SharableData import userName, repo
+from SharableData import repoName
 
 # https://api.github.com/repos/mohamedahmed-cloud/Github-follower/contents
 
-api = f"https://raw.githubusercontent.com/{userName}/{repo}/main/"
-def getnoLine(url):
-    global api
+def getnoLine(url, userName):
+    api = f"https://raw.githubusercontent.com/{userName}/{repoName}/main/"
+
     data1 = f"{api}{url}"
     print(data1)
     response = requests.get(data1)
