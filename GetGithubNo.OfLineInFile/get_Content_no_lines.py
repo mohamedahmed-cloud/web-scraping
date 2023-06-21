@@ -1,7 +1,6 @@
 import requests
 from SharableData import repoName
 
-# https://api.github.com/repos/mohamedahmed-cloud/Github-follower/contents
 
 def getnoLine(url, userName):
     api = f"https://raw.githubusercontent.com/{userName}/{repoName}/main/"

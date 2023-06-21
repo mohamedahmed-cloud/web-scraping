@@ -4,8 +4,6 @@ from get_File_Path import extract_file_path
 from SharableData import repoName
 
 
-# print(github_link)
-# https://api.github.com/repos/mohamedahmed-cloud/Parking-system/contents
 
 accessToken = get_Access_Token.getAcessToken()
 header = {"Authorization": accessToken}
