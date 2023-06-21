@@ -62,6 +62,7 @@ def getValue():
         return file
 
     else:
+        # print(f"Erro {response.status_code}")
         return (f"Error {response.status_code}")
 
 

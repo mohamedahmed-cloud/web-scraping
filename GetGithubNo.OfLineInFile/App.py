@@ -3,11 +3,18 @@ from PrepareHtmlContent import data
 from WriteInHtml import writeInHtml
 from RenderHtmlFile import render
 arr = getValue()
-htmlPage = data(arr)
-print(htmlPage)
-writeInHtml(htmlPage)
-render()
+flag = 0
 
+if arr == "Error 403":
+    flag = 1
+
+if not flag:
+    htmlPage = data(arr)
+    print(htmlPage)
+    writeInHtml(htmlPage)
+    render()
+else:
+    print("Error 403")
 
 
 

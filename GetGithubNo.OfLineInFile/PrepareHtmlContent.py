@@ -22,13 +22,13 @@ def data(allData):
             htmlContent += "<tr class = 'two'>"
         cnt += 1
         
-        htmlContent += f"<td class = 'file'> {i[0]} </td>"
-        htmlContent += f"<td class = 'line-number'>{i[1]}</td>"
-        htmlContent += '</tr>'
+        htmlContent += f"<td class = 'file'> {i[0]} </td>\n"
+        htmlContent += f"<td class = 'line-number'>{i[1]}</td>\n"
+        htmlContent += '</tr>\n'
   
 
 
-    htmlContent += "</table>"
-    htmlContent += "</body>"
+    htmlContent += "</table>\n"
+    htmlContent += "</body>\n"
     return htmlContent
 
