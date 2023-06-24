@@ -20,5 +20,5 @@
 ## GetRoundsFromCodeforces:
 - This project used to get all codeforce rounds according it's year. the year you enter when run the project
 
-## finall:
+## finally:
 - To run any project from these only run the app.py file.
