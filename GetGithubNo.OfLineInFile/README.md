@@ -9,7 +9,7 @@
 ```
 
 ## Idea Behind Creating This Project:
-This project was created to assist IEEE in automatically checking student tasks.
+- This project was created to assist IEEE in automatically checking student tasks.
 
 
 ## How to Use
